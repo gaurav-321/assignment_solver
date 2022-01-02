@@ -84,7 +84,7 @@ class Document:
                 for index, line in enumerate(text):
                     if len(clean_line(line)) > ROW_WIDTH:
                         text[index] = line[:ROW_WIDTH] + "\n"
-                        if line[ROW_WIDTH+1] != "" or line[ROW_WIDTH+2] != "":#dd
+                        if line[ROW_WIDTH+1] != "" or line[ROW_WIDTH+2] != "":
                             if "#" in line:
                                 text.insert(index + 1, "#-" + line[ROW_WIDTH:])
                             else:
