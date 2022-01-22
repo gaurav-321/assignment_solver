@@ -1,15 +1,12 @@
 import os
-import random
 import re
 import shutil
 import traceback
-
-import cv2
-import numpy as np
-from PIL import ImageFont, ImageDraw, Image, ImageChops, ImageMath
-import time, timeit
 from glob import glob
 from random import randint
+import cv2
+import numpy as np
+from PIL import ImageFont, ImageDraw, Image
 
 PAGE_IMG = "pages/notebook_1.jpg"
 FONTS = glob("fonts\\test\\my_font\\*")
@@ -50,6 +47,7 @@ class Page:
             self.lines.remove(x)
         self.lines = self.lines[ROW_SKIP:]
 
+
 class Document:
     def __init__(self):
         self.file_loc = "input/document.txt"
@@ -61,10 +59,8 @@ class Document:
         for i, char in enumerate(line):
             if char == " ":
                 count_w += 1
-            if i > char_limit:
-                if " " not in line[i:8]:
-                    count_w += 1
-                return count_w
+                if i > char_limit:
+                    return count_w
         return len(line.split(" "))
 
     def document_parse(self, total_lines):
@@ -102,7 +98,7 @@ class Document:
             gap = 6 + randint(1, 3)
             if "##" in line:
                 color = (93, 90, 90, 255)
-                gap = page.page_img.shape[1]/2-len(line)*30
+                gap = page.page_img.shape[1] / 2 - len(line) * 30
             elif '#' in line:
                 color = (93, 90, 90, 255)
             else:
