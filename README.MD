@@ -33,5 +33,4 @@ It is an open source Assignment Solver used to write text from file into image i
 
 ### This is a contributions for open source projects, if you are utilizing this project please give credit to my github Ordinary Pythoneer
 
-Video
 [<img src="https://img.youtube.com/vi/fRjA7gJhdGw/maxresdefault.jpg" width="50%">](https://youtu.be/fRjA7gJhdGw)
