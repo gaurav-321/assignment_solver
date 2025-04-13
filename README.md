@@ -2,7 +2,8 @@
 
 An assignment-solving program that converts text input into images that look handwritten.
 
----
+## ✨ Description
+This project aims to simplify the process of creating visually appealing assignments by converting plain text into high-quality, handwritten-style images. It supports custom fonts and notebook-style backgrounds, making it ideal for educational materials or creative projects.
 
 ## 🚀 Features
 - Convert plain text to handwritten-style images
@@ -12,18 +13,14 @@ An assignment-solving program that converts text input into images that look han
   - `##` for centered, black-colored headings
 - Works with editable `.txt` input file
 
----
-
-## 📁 Setup
+## 🛠️ Installation
 Make sure Python 3 and `pip` are installed, then run:
 
 ```bash
 pip3 install -r requirements.txt
 ```
 
----
-
-## 🔧 How to Use
+## 📦 Usage
 1. Open `input/document.txt`.
 2. Write or paste your content using these rules:
    - Lines starting with `#` are black-colored
@@ -38,7 +35,8 @@ python3 main.py
 
 Images will be saved in the `output/` directory.
 
----
+## 🔧 Configuration
+The project uses OpenCV trackbars to configure spacing, font size, and more. You can adjust these settings during runtime by running the program.
 
 ## 🧳 Output Example
 
@@ -48,8 +46,6 @@ Images will be saved in the `output/` directory.
 | ![Second Image](output/1.png?raw=true) |
 | ![Third Image](output/2.png?raw=true) |
 
----
-
 ## 🔎 How It Works
 The tool uses OpenCV and PIL to:
 - Analyze a notebook-style background image
@@ -58,15 +54,15 @@ The tool uses OpenCV and PIL to:
 
 It supports configuration for spacing, font size, and more using OpenCV trackbars.
 
----
-
-## 💪 Contributing & Credits
+## 🌟 Contributing & Credits
 This project was created as part of an open-source contribution effort.
 If you find this project useful or use it in your work, kindly credit [Ordinary Pythoneer](https://github.com/Ordinary-Pythoneer).
 
 [![Demo Video](https://img.youtube.com/vi/fRjA7gJhdGw/maxresdefault.jpg)](https://youtu.be/fRjA7gJhdGw)
 
+## 📄 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
 ---
 
-Happy writing ✍️!
-
+Thank you for using Assignment Solver in Python! 😊
